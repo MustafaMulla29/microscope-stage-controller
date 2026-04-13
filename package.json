@@ -2,7 +2,7 @@
   "name": "microscope-stage-controller",
   "version": "1.0.1",
   "description": "A tscircuit component package",
-  "main": "index.tsx",
+  "main": "dist/index.js",
   "keywords": [
     "tscircuit",
     "circuit",
