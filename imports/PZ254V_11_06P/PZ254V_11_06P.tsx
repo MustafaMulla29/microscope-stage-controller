@@ -18,6 +18,8 @@ const pinAttributes = {
   pin4: { includeInBoardPinout: true },
   pin5: { includeInBoardPinout: true },
   pin6: { includeInBoardPinout: true },
+  VCC_3V3: { requiresPower: true },
+  GND: { requiresGround: true },
 } as const
 
 export const PZ254V_11_06P = (props: ChipProps<typeof pinLabels>) => {

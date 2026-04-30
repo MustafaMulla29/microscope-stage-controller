@@ -54,7 +54,7 @@ export const DRV8833PWPR = (props: ChipProps<typeof pinLabels>) => {
 }}
       manufacturerPartNumber="DRV8833PWPR"
       footprint={<footprint>
-        <smtpad portHints={["pin1"]} pcbX="-2.275078mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
+        <smtpad portHints={["pin1"]} pcbX="-2.275078mm" pcbY="-2.850007mm" width="0.500012mm" height="1.2999974mm" shape="rect" />
 <smtpad portHints={["pin2"]} pcbX="-1.625092mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
 <smtpad portHints={["pin3"]} pcbX="-0.975106mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
 <smtpad portHints={["pin4"]} pcbX="-0.324866mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />

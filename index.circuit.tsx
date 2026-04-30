@@ -1,6 +1,6 @@
 import React from "react"
 import { DRV8833PWPR } from "./imports/DRV8833PWPR/DRV8833PWPR"
-import { YA13_FL7_4_B5Ka_45_10__R_Y06 } from "./imports/YA13_FL7_4_B5Ka_45_10__R_Y06/YA13_FL7_4_B5Ka_45_10__R_Y06"
+import { YA13_FL7_4_B5Ka_45_10__R_Y06 } from "./imports/YA13_FL7_4_B5Ka_45_10__R_Y06"
 import { A_3296W_1_103 } from "./imports/A_3296W_1_103/A_3296W_1_103"
 import { WJ500V_5_08_2P } from "./imports/WJ500V_5_08_2P/WJ500V_5_08_2P"
 import { PZ254V_11_06P } from "./imports/PZ254V_11_06P/PZ254V_11_06P"
@@ -8,7 +8,14 @@ import { AMS1117_3_3 } from "./imports/AMS1117_3_3/AMS1117_3_3"
 import { ATMEGA328P_AU } from "./imports/ATMEGA328P_AU/ATMEGA328P_AU"
 
 export default () => (
-  <board width="100mm" height="70mm" layers={4}>
+  <board
+    width="100mm"
+    height="70mm"
+    layers={4}
+    defaultTraceWidth="0.15mm"
+    nominalTraceWidth="0.2mm"
+    minTraceWidth="0.1mm"
+  >
     <WJ500V_5_08_2P
       name="J_PWR"
       pcbX={-44}
@@ -24,7 +31,7 @@ export default () => (
     <WJ500V_5_08_2P
       name="J_XACT"
       pcbX={-44}
-      pcbY={8}
+      pcbY={6}
       schX={-24}
       schY={4}
       pinLabels={{
@@ -36,7 +43,7 @@ export default () => (
     <WJ500V_5_08_2P
       name="J_YACT"
       pcbX={-44}
-      pcbY={-12}
+      pcbY={-6}
       schX={-24}
       schY={-4}
       pinLabels={{
@@ -47,7 +54,7 @@ export default () => (
 
     <AMS1117_3_3
       name="U_REG"
-      pcbX={-14}
+      pcbX={-25}
       pcbY={24}
       schX={-8}
       schY={20}
@@ -55,8 +62,9 @@ export default () => (
 
     <DRV8833PWPR
       name="U_DRV"
-      pcbX={-16}
-      pcbY={-1}
+      pcbX={-33}
+      pcbY={0}
+      pcbRotation={-90}
       schX={-8}
       schY={0}
     />
@@ -83,16 +91,16 @@ export default () => (
 
     <ATMEGA328P_AU
       name="U_MCU"
-      pcbX={18}
-      pcbY={-8}
+      pcbX={17}
+      pcbY={-4}
       schX={10}
       schY={14}
     />
 
     <A_3296W_1_103
       name="RV_X"
-      pcbX={31}
-      pcbY={-2}
+      pcbX={32}
+      pcbY={0}
       schX={20}
       schY={-2}
       pinLabels={{
@@ -104,8 +112,8 @@ export default () => (
 
     <A_3296W_1_103
       name="RV_Y"
-      pcbX={31}
-      pcbY={-18}
+      pcbX={32}
+      pcbY={-16}
       schX={20}
       schY={-10}
       pinLabels={{
@@ -117,7 +125,7 @@ export default () => (
 
     <PZ254V_11_06P
       name="J_ISP"
-      pcbX={20}
+      pcbX={21}
       pcbY={18}
       schX={8}
       schY={26}
@@ -137,8 +145,8 @@ export default () => (
       footprint="1206"
       manufacturerPartNumber="CL31A226KOHNNNE"
       supplierPartNumbers={{ jlcpcb: ["C90146"] }}
-      pcbX={-26}
-      pcbY={2}
+      pcbX={-25}
+      pcbY={5}
       schX={-17}
       schY={20}
     />
@@ -149,8 +157,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CC0603KRX7R9BB104"
       supplierPartNumbers={{ jlcpcb: ["C14663"] }}
-      pcbX={-22}
-      pcbY={-4}
+      pcbX={-26}
+      pcbY={3}
       schX={-17}
       schY={16}
     />
@@ -161,8 +169,8 @@ export default () => (
       footprint="1206"
       manufacturerPartNumber="CL31A106KAHNNNE"
       supplierPartNumbers={{ jlcpcb: ["C9807"] }}
-      pcbX={-30}
-      pcbY={30}
+      pcbX={-13}
+      pcbY={27}
       schX={-12}
       schY={20}
     />
@@ -173,8 +181,8 @@ export default () => (
       footprint="1206"
       manufacturerPartNumber="CL31A106KAHNNNE"
       supplierPartNumbers={{ jlcpcb: ["C9807"] }}
-      pcbX={-6}
-      pcbY={30}
+      pcbX={-13}
+      pcbY={21}
       schX={-4}
       schY={20}
     />
@@ -185,8 +193,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CC0603KRX7R9BB104"
       supplierPartNumbers={{ jlcpcb: ["C14663"] }}
-      pcbX={-24}
-      pcbY={10}
+      pcbX={-6}
+      pcbY={21}
       schX={-4}
       schY={16}
     />
@@ -197,8 +205,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CL10A226MQ8NRNC"
       supplierPartNumbers={{ jlcpcb: ["C59461"] }}
-      pcbX={-10}
-      pcbY={3}
+      pcbX={-26}
+      pcbY={1}
       schX={-4}
       schY={4}
     />
@@ -209,8 +217,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603B103K500NT"
       supplierPartNumbers={{ jlcpcb: ["C57112"] }}
-      pcbX={-10}
-      pcbY={-4}
+      pcbX={-26}
+      pcbY={-0.5}
       schX={-4}
       schY={0}
     />
@@ -221,8 +229,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CC0603KRX7R9BB104"
       supplierPartNumbers={{ jlcpcb: ["C14663"] }}
-      pcbX={26}
-      pcbY={-6}
+      pcbX={25}
+      pcbY={-3}
       schX={14}
       schY={16}
     />
@@ -233,8 +241,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CC0603KRX7R9BB104"
       supplierPartNumbers={{ jlcpcb: ["C14663"] }}
-      pcbX={26}
-      pcbY={-10}
+      pcbX={25}
+      pcbY={-7}
       schX={14}
       schY={14}
     />
@@ -257,8 +265,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603WAF1002T5E"
       supplierPartNumbers={{ jlcpcb: ["C25804"] }}
-      pcbX={22}
-      pcbY={-2}
+      pcbX={24}
+      pcbY={7}
       schX={14}
       schY={18}
     />
@@ -269,35 +277,96 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603WAF1002T5E"
       supplierPartNumbers={{ jlcpcb: ["C25804"] }}
-      pcbX={4}
-      pcbY={20}
+      pcbX={-29}
+      pcbY={-6}
       schX={14}
       schY={10}
     />
 
-    <trace from="J_PWR.VBAT" to="net.VBAT" width="0.8mm" />
-    <trace from="J_PWR.GND" to="net.GND" width="0.8mm" />
+    <resistor
+      name="R_NSLEEP_PULLUP"
+      resistance="10k"
+      footprint="0603"
+      manufacturerPartNumber="0603WAF1002T5E"
+      supplierPartNumbers={{ jlcpcb: ["C25804"] }}
+      pcbX={-22}
+      pcbY={10}
+      schX={14}
+      schY={6}
+    />
 
-    <trace from="C_VM_BULK.pin1" to="net.VBAT" width="0.8mm" />
-    <trace from="C_VM_BULK.pin2" to="net.GND" width="0.8mm" />
-    <trace from="C_VM_DEC.pin1" to="net.VBAT" width="0.5mm" />
-    <trace from="C_VM_DEC.pin2" to="net.GND" width="0.5mm" />
+    <trace
+      from="J_PWR.VBAT"
+      to="net.VBAT"
+      thickness="0.6mm"
+      routingPhaseIndex={0}
+    />
+    <trace
+      from="J_PWR.GND"
+      to="net.GND"
+      thickness="0.6mm"
+      routingPhaseIndex={0}
+    />
 
-    <trace from="U_REG.VIN" to="net.VBAT" width="0.8mm" />
-    <trace from="U_REG.GND" to="net.GND" />
-    <trace from="U_REG.VOUT1" to="net.VCC_3V3" />
-    <trace from="U_REG.VOUT2" to="net.VCC_3V3" />
+    <trace
+      from="U_DRV.VM"
+      to="net.VBAT"
+      thickness="0.45mm"
+      routingPhaseIndex={0}
+    />
+    <trace
+      from="U_DRV.GND1"
+      to="U_DRV.GND2"
+      thickness="0.2mm"
+      routingPhaseIndex={0}
+    />
+    <trace
+      from="U_DRV.GND1"
+      to="net.GND"
+      thickness="0.25mm"
+      routingPhaseIndex={0}
+    />
 
-    <trace from="C_REG_IN.pin1" to="net.VBAT" width="0.8mm" />
-    <trace from="C_REG_IN.pin2" to="net.GND" />
-    <trace from="C_REG_OUT.pin1" to="net.VCC_3V3" />
-    <trace from="C_REG_OUT.pin2" to="net.GND" />
+    <trace
+      from="C_VM_BULK.pin1"
+      to="U_DRV.VM"
+      thickness="0.6mm"
+      routingPhaseIndex={0}
+    />
+    <trace
+      from="C_VM_BULK.pin2"
+      to="U_DRV.GND1"
+      thickness="0.6mm"
+      routingPhaseIndex={0}
+    />
+    <trace
+      from="C_VM_DEC.pin1"
+      to="U_DRV.VM"
+      thickness="0.4mm"
+      routingPhaseIndex={0}
+    />
+    <trace
+      from="C_VM_DEC.pin2"
+      to="U_DRV.GND1"
+      thickness="0.4mm"
+      routingPhaseIndex={0}
+    />
+
+    <trace from="U_REG.VIN" to="net.VBAT" thickness="0.5mm" />
+    <trace from="U_REG.GND" to="J_PWR.GND" thickness="0.3mm" />
+    <trace from="U_REG.VOUT1" to="net.VCC_3V3" thickness="0.3mm" />
+    <trace from="U_REG.VOUT2" to="net.VCC_3V3" thickness="0.3mm" />
+
+    <trace from="C_REG_IN.pin1" to="U_REG.VIN" thickness="0.5mm" />
+    <trace from="C_REG_IN.pin2" to="U_REG.GND" thickness="0.35mm" />
+    <trace from="C_REG_OUT.pin1" to="U_REG.VOUT1" thickness="0.35mm" />
+    <trace from="C_REG_OUT.pin2" to="U_REG.GND" thickness="0.35mm" />
 
     <trace from="C_VCC_DEC.pin1" to="net.VCC_3V3" />
     <trace from="C_VCC_DEC.pin2" to="net.GND" />
 
-    <trace from="C_MCU_DEC.pin1" to="net.VCC_3V3" />
-    <trace from="C_MCU_DEC.pin2" to="net.GND" />
+    <trace from="C_MCU_DEC.pin1" to="U_MCU.VCC1" />
+    <trace from="C_MCU_DEC.pin2" to="U_MCU.GND3" />
     <trace from="C_AREF.pin1" to="U_MCU.AREF" />
     <trace from="C_AREF.pin2" to="net.GND" />
 
@@ -314,6 +383,8 @@ export default () => (
     <trace from="R_RESET_PULLUP.pin2" to="U_MCU.RESET" />
     <trace from="R_FAULT_PULLUP.pin1" to="net.VCC_3V3" />
     <trace from="R_FAULT_PULLUP.pin2" to="net.FAULT" />
+    <trace from="R_NSLEEP_PULLUP.pin1" to="net.VCC_3V3" />
+    <trace from="R_NSLEEP_PULLUP.pin2" to="U_DRV.nSleep" />
 
     <trace from="U_JOY.X_HI" to="net.VCC_3V3" />
     <trace from="U_JOY.X_LO" to="net.GND" />
@@ -336,39 +407,55 @@ export default () => (
     <trace from="RV_Y.GND" to="net.GND" />
     <trace from="RV_Y.WIPER" to="net.Y_SPEED_WIPER" />
 
-    <trace from="U_DRV.VM" to="net.VBAT" width="0.8mm" />
-    <trace from="U_DRV.nSleep" to="net.VCC_3V3" />
-    <trace from="U_DRV.GND1" to="net.GND" />
-    <trace from="U_DRV.GND2" to="net.GND" />
-    <trace from="U_DRV.AISEN" to="net.GND" />
-    <trace from="U_DRV.BISEN" to="net.GND" />
+    <trace from="U_DRV.AISEN" to="U_DRV.GND1" />
+    <trace from="U_DRV.BISEN" to="U_DRV.GND1" />
 
     <trace from="C_VINT.pin1" to="U_DRV.VINT" />
-    <trace from="C_VINT.pin2" to="net.GND" />
+    <trace from="C_VINT.pin2" to="U_DRV.GND1" />
     <trace from="C_VCP.pin1" to="U_DRV.VCP" />
-    <trace from="C_VCP.pin2" to="net.VBAT" width="0.5mm" />
+    <trace from="C_VCP.pin2" to="U_DRV.VM" thickness="0.3mm" />
 
-    <trace from="U_DRV.AIN1" to="U_MCU.PD5" />
-    <trace from="U_DRV.AIN2" to="U_MCU.PD6" />
-    <trace from="U_DRV.BIN1" to="U_MCU.PD7" />
+    <trace from="U_DRV.AIN1" to="net.X_IN1" />
+    <trace from="U_DRV.AIN2" to="net.X_IN2" />
+    <trace from="U_DRV.BIN1" to="net.Y_IN1" />
     <trace from="U_DRV.BIN2" to="net.Y_IN2" />
     <trace from="U_DRV.nFault" to="net.FAULT" />
 
-    <trace from="U_DRV.AOUT1" to="J_XACT.X_OUT1" width="0.8mm" />
-    <trace from="U_DRV.AOUT2" to="J_XACT.X_OUT2" width="0.8mm" />
-    <trace from="U_DRV.BOUT1" to="J_YACT.Y_OUT1" width="0.8mm" />
-    <trace from="U_DRV.BOUT2" to="J_YACT.Y_OUT2" width="0.8mm" />
+    <trace
+      from="U_DRV.AOUT1"
+      to="J_XACT.X_OUT2"
+      thickness="0.35mm"
+      routingPhaseIndex={0}
+    />
+    <trace
+      from="U_DRV.AOUT2"
+      to="J_XACT.X_OUT1"
+      thickness="0.35mm"
+      routingPhaseIndex={0}
+    />
+    <trace
+      from="U_DRV.BOUT1"
+      to="J_YACT.Y_OUT1"
+      thickness="0.35mm"
+      routingPhaseIndex={0}
+    />
+    <trace
+      from="U_DRV.BOUT2"
+      to="J_YACT.Y_OUT2"
+      thickness="0.35mm"
+      routingPhaseIndex={0}
+    />
 
     <trace from="U_MCU.ADC0" to="net.JOY_X" />
     <trace from="U_MCU.ADC1" to="net.JOY_Y" />
     <trace from="U_MCU.ADC2" to="net.X_SPEED_WIPER" />
     <trace from="U_MCU.ADC3" to="net.Y_SPEED_WIPER" />
     <trace from="U_MCU.ADC4" to="net.JOY_SW" />
+    <trace from="U_MCU.PD5" to="net.X_IN1" />
+    <trace from="U_MCU.PD6" to="net.X_IN2" />
+    <trace from="U_MCU.PD7" to="net.Y_IN1" />
     <trace from="U_MCU.PB0" to="net.Y_IN2" />
     <trace from="U_MCU.INT0" to="net.FAULT" />
-
-    <trace from="U_MCU.VCC1" to="U_MCU.VCC2" />
-    <trace from="U_MCU.GND2" to="U_MCU.GND3" />
 
     <trace from="J_ISP.MOSI" to="U_MCU.MOSI" />
     <trace from="J_ISP.MISO" to="U_MCU.MISO" />

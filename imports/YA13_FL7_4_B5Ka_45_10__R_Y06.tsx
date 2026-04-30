@@ -1,5 +1,3 @@
-import objPath from "./YA13_FL7_4_B5Ka_45_10__R_Y06.obj"
-import stepPath from "./YA13_FL7_4_B5Ka_45_10__R_Y06.step"
 import type { ChipProps } from "@tscircuit/props"
 
 const pinLabels = {
@@ -66,10 +64,10 @@ export const YA13_FL7_4_B5Ka_45_10__R_Y06 = (props: ChipProps<typeof pinLabels>)
 <courtyardoutline outline={[{"x":-8.150200100000006,"y":8.40420010000014},{"x":8.427999900000032,"y":8.40420010000014},{"x":8.427999900000032,"y":-8.935999899999956},{"x":-8.150200100000006,"y":-8.935999899999956},{"x":-8.150200100000006,"y":8.40420010000014}]} />
       </footprint>}
       cadModel={{
-        objUrl: objPath,
-        stepUrl: stepPath,
+        objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C37323742.obj?uuid=3d8711724bd94e00ae1621852217ca17",
+        stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C37323742.step?uuid=3d8711724bd94e00ae1621852217ca17",
         pcbRotationOffset: 0,
-        modelOriginPosition: { x: 2.2250061000000034, y: -0.9999894999999734, z: -11.000007 },
+        modelOriginPosition: { x: 1.4249950000000027, y: -0.9500022999999729, z: -11.000007 },
       }}
       {...props}
     />

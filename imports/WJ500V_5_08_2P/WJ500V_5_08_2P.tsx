@@ -8,8 +8,14 @@ const pinLabels = {
 } as const
 
 const pinAttributes = {
-  pin1: { includeInBoardPinout: true },
-  pin2: { includeInBoardPinout: true },
+  pin1: { includeInBoardPinout: true, requiresPower: true },
+  pin2: { includeInBoardPinout: true, requiresGround: true },
+  VBAT: { requiresPower: true },
+  GND: { requiresGround: true },
+  X_OUT1: { requiresPower: true },
+  X_OUT2: { requiresGround: true },
+  Y_OUT1: { requiresPower: true },
+  Y_OUT2: { requiresGround: true },
 } as const
 
 export const WJ500V_5_08_2P = (props: ChipProps<typeof pinLabels>) => {
