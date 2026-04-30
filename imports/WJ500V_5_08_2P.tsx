@@ -1,11 +1,10 @@
-import objPath from "./WJ500V_5_08_2P.obj"
-import stepPath from "./WJ500V_5_08_2P.step"
 import type { ChipProps } from "@tscircuit/props"
 
 const pinLabels = {
   pin1: ["pin1", "VBAT", "X_OUT1", "Y_OUT1"],
   pin2: ["pin2", "GND", "X_OUT2", "Y_OUT2"]
 } as const
+
 
 const pinAttributes = {
   pin1: { includeInBoardPinout: true, requiresPower: true },
@@ -44,10 +43,10 @@ export const WJ500V_5_08_2P = (props: ChipProps<typeof pinLabels>) => {
 <courtyardoutline outline={[{"x":-5.939599999999999,"y":5.888800000000003},{"x":5.456999999999994,"y":5.888800000000003},{"x":5.456999999999994,"y":-4.771199999999993},{"x":-5.939599999999999,"y":-4.771199999999993},{"x":-5.939599999999999,"y":5.888800000000003}]} />
       </footprint>}
       cadModel={{
-        objUrl: objPath,
-        stepUrl: stepPath,
+        objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C8465.obj?uuid=d60ef5d423934d3393dc75fa0a07b6bd",
+        stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C8465.step?uuid=d60ef5d423934d3393dc75fa0a07b6bd",
         pcbRotationOffset: 0,
-        modelOriginPosition: { x: -3.139999400000004, y: 9.999999985299546e-7, z: -0.000006999999999646178 },
+        modelOriginPosition: { x: -2.5399878999999967, y: 0, z: -0.000006999999999646178 },
       }}
       {...props}
     />
