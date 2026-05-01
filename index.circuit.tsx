@@ -20,6 +20,7 @@ export default () => (
       name="J_PWR"
       pcbX={-44}
       pcbY={26}
+      pcbRotation={90}
       schX={-24}
       schY={20}
       pinLabels={{
@@ -32,6 +33,7 @@ export default () => (
       name="J_XACT"
       pcbX={-44}
       pcbY={6}
+      pcbRotation={90}
       schX={-24}
       schY={4}
       pinLabels={{
@@ -44,6 +46,7 @@ export default () => (
       name="J_YACT"
       pcbX={-44}
       pcbY={-6}
+      pcbRotation={90}
       schX={-24}
       schY={-4}
       pinLabels={{
@@ -205,8 +208,9 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CL10A226MQ8NRNC"
       supplierPartNumbers={{ jlcpcb: ["C59461"] }}
-      pcbX={-26}
-      pcbY={1}
+      pcbX={-30.5}
+      pcbY={5.5}
+      pcbRotation={90}
       schX={-4}
       schY={4}
     />
@@ -411,11 +415,11 @@ export default () => (
     <trace from="U_DRV.BISEN" to="U_DRV.GND1" />
 
     <trace from="C_VINT.pin1" to="U_DRV.VINT" />
-    <trace from="C_VINT.pin2" to="U_DRV.GND1" />
+    <trace from="C_VINT.pin2" to="C_VM_BULK.pin2" />
     <trace from="C_VCP.pin1" to="U_DRV.VCP" />
     <trace from="C_VCP.pin2" to="U_DRV.VM" thickness="0.3mm" />
 
-    <trace from="U_DRV.AIN1" to="net.X_IN1" />
+    <trace from="U_DRV.AIN1" to="U_MCU.PD5" />
     <trace from="U_DRV.AIN2" to="net.X_IN2" />
     <trace from="U_DRV.BIN1" to="net.Y_IN1" />
     <trace from="U_DRV.BIN2" to="net.Y_IN2" />
@@ -451,7 +455,6 @@ export default () => (
     <trace from="U_MCU.ADC2" to="net.X_SPEED_WIPER" />
     <trace from="U_MCU.ADC3" to="net.Y_SPEED_WIPER" />
     <trace from="U_MCU.ADC4" to="net.JOY_SW" />
-    <trace from="U_MCU.PD5" to="net.X_IN1" />
     <trace from="U_MCU.PD6" to="net.X_IN2" />
     <trace from="U_MCU.PD7" to="net.Y_IN1" />
     <trace from="U_MCU.PB0" to="net.Y_IN2" />

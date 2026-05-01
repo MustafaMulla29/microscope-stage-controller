@@ -62,7 +62,7 @@ export const DRV8833PWPR = (props: ChipProps<typeof pinLabels>) => {
 <smtpad portHints={["pin6"]} pcbX="0.975106mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
 <smtpad portHints={["pin7"]} pcbX="1.625092mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
 <smtpad portHints={["pin8"]} pcbX="2.275078mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin16"]} pcbX="-2.275078mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
+<smtpad portHints={["pin16"]} pcbX="-2.275078mm" pcbY="2.850007mm" width="0.500012mm" height="1.2999974mm" shape="rect" />
 <smtpad portHints={["pin15"]} pcbX="-1.625092mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
 <smtpad portHints={["pin14"]} pcbX="-0.975106mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
 <smtpad portHints={["pin13"]} pcbX="-0.324866mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
