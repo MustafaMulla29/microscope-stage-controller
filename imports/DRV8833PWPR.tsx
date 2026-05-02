@@ -1,5 +1,3 @@
-import objPath from "./DRV8833PWPR.obj"
-import stepPath from "./DRV8833PWPR.step"
 import type { ChipProps } from "@tscircuit/props"
 
 const pinLabels = {
@@ -97,8 +95,8 @@ export const DRV8833PWPR = (props: ChipProps<typeof pinLabels>) => {
 <courtyardoutline outline={[{"x":-3.298000000000002,"y":3.5774000000000115},{"x":2.7392000000000962,"y":3.5774000000000115},{"x":2.7392000000000962,"y":-3.983799999999974},{"x":-3.298000000000002,"y":-3.983799999999974},{"x":-3.298000000000002,"y":3.5774000000000115}]} />
       </footprint>}
       cadModel={{
-        objUrl: objPath,
-        stepUrl: stepPath,
+        objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C50506.obj?uuid=534f03d8fe164fbab551f91e5a792e30",
+        stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C50506.step?uuid=534f03d8fe164fbab551f91e5a792e30",
         pcbRotationOffset: 90,
         modelOriginPosition: { x: 0, y: 0, z: -0.019205 },
       }}

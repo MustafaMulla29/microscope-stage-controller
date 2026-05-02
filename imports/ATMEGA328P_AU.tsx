@@ -1,5 +1,3 @@
-import objPath from "./ATMEGA328P_AU.obj"
-import stepPath from "./ATMEGA328P_AU.step"
 import type { ChipProps } from "@tscircuit/props"
 
 const pinLabels = {
@@ -106,10 +104,10 @@ export const ATMEGA328P_AU = (props: ChipProps<typeof pinLabels>) => {
 <courtyardoutline outline={[{"x":-5.228400000000008,"y":5.215700000000012},{"x":5.2283999999999935,"y":5.215700000000012},{"x":5.2283999999999935,"y":-5.215699999999998},{"x":-5.228400000000008,"y":-5.215699999999998},{"x":-5.228400000000008,"y":5.215700000000012}]} />
       </footprint>}
       cadModel={{
-        objUrl: objPath,
-        stepUrl: stepPath,
+        objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C14877.obj?uuid=4d9f6c3430024506b87ce44b53201fc5",
+        stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C14877.step?uuid=4d9f6c3430024506b87ce44b53201fc5",
         pcbRotationOffset: 90,
-        modelOriginPosition: { x: -0.00131110000000168, y: -0.00301659999999665, z: 0.000917 },
+        modelOriginPosition: { x: -0.0012984000000164642, y: -0.0030292999999934622, z: 0.000917 },
       }}
       {...props}
     />

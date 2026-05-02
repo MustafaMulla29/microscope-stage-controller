@@ -1,5 +1,3 @@
-import objPath from "./AMS1117_3_3.obj"
-import stepPath from "./AMS1117_3_3.step"
 import type { ChipProps } from "@tscircuit/props"
 
 const pinLabels = {
@@ -36,11 +34,11 @@ export const AMS1117_3_3 = (props: ChipProps<typeof pinLabels>) => {
 <silkscreentext text="{NAME}" pcbX="0.29178885mm" pcbY="4.3274mm" anchorAlignment="center" fontSize="1mm" />
 <courtyardoutline outline={[{"x":-4.428611149999938,"y":3.5774000000000115},{"x":5.012188849999916,"y":3.5774000000000115},{"x":5.012188849999916,"y":-3.5773999999998978},{"x":-4.428611149999938,"y":-3.5773999999998978},{"x":-4.428611149999938,"y":3.5774000000000115}]} />
       </footprint>}
-      cadModel={{
-        objUrl: objPath,
-        stepUrl: stepPath,
+       cadModel={{
+        objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C6186.obj?uuid=e80246a9471445bfb635be848806a22e",
+        stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C6186.step?uuid=e80246a9471445bfb635be848806a22e",
         pcbRotationOffset: 180,
-        modelOriginPosition: { x: 0, y: 0, z: -0.049394 },
+        modelOriginPosition: { x: -0.14002385000003414, y: -0.000012700000070253736, z: -0.049394 },
       }}
       {...props}
     />
