@@ -208,9 +208,9 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CL10A226MQ8NRNC"
       supplierPartNumbers={{ jlcpcb: ["C59461"] }}
-      pcbX={-30.5}
-      pcbY={5.5}
-      pcbRotation={90}
+      pcbX={-27.8}
+      pcbY={1.2}
+      pcbRotation={0}
       schX={-4}
       schY={4}
     />
@@ -221,8 +221,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603B103K500NT"
       supplierPartNumbers={{ jlcpcb: ["C57112"] }}
-      pcbX={-26}
-      pcbY={-0.5}
+      pcbX={-27.6}
+      pcbY={-1.6}
       schX={-4}
       schY={0}
     />
@@ -301,7 +301,7 @@ export default () => (
 
     <trace
       from="J_PWR.VBAT"
-      to="net.VBAT"
+      to="U_REG.VIN"
       thickness="0.6mm"
       routingPhaseIndex={0}
     />
@@ -314,7 +314,7 @@ export default () => (
 
     <trace
       from="U_DRV.VM"
-      to="net.VBAT"
+      to="U_REG.VIN"
       thickness="0.45mm"
       routingPhaseIndex={0}
     />
@@ -325,7 +325,7 @@ export default () => (
       routingPhaseIndex={0}
     />
     <trace
-      from="U_DRV.GND1"
+      from="U_DRV.GND2"
       to="net.GND"
       thickness="0.25mm"
       routingPhaseIndex={0}
@@ -339,7 +339,7 @@ export default () => (
     />
     <trace
       from="C_VM_BULK.pin2"
-      to="U_DRV.GND1"
+      to="U_DRV.GND2"
       thickness="0.6mm"
       routingPhaseIndex={0}
     />
@@ -351,13 +351,12 @@ export default () => (
     />
     <trace
       from="C_VM_DEC.pin2"
-      to="U_DRV.GND1"
+      to="U_DRV.GND2"
       thickness="0.4mm"
       routingPhaseIndex={0}
     />
 
-    <trace from="U_REG.VIN" to="net.VBAT" thickness="0.5mm" />
-    <trace from="U_REG.GND" to="J_PWR.GND" thickness="0.3mm" />
+    <trace from="U_REG.GND" to="U_DRV.GND2" thickness="0.3mm" />
     <trace from="U_REG.VOUT1" to="net.VCC_3V3" thickness="0.3mm" />
     <trace from="U_REG.VOUT2" to="net.VCC_3V3" thickness="0.3mm" />
 
@@ -411,15 +410,15 @@ export default () => (
     <trace from="RV_Y.GND" to="net.GND" />
     <trace from="RV_Y.WIPER" to="net.Y_SPEED_WIPER" />
 
-    <trace from="U_DRV.AISEN" to="U_DRV.GND1" />
-    <trace from="U_DRV.BISEN" to="U_DRV.GND1" />
+    <trace from="U_DRV.AISEN" to="U_DRV.GND2" />
+    <trace from="U_DRV.BISEN" to="U_DRV.GND2" />
 
     <trace from="C_VINT.pin1" to="U_DRV.VINT" />
     <trace from="C_VINT.pin2" to="C_VM_BULK.pin2" />
     <trace from="C_VCP.pin1" to="U_DRV.VCP" />
-    <trace from="C_VCP.pin2" to="U_DRV.VM" thickness="0.3mm" />
+    <trace from="C_VCP.pin2" to="U_DRV.VM" thickness="0.1mm" />
 
-    <trace from="U_DRV.AIN1" to="U_MCU.PD5" />
+    <trace from="U_DRV.AIN1" to="net.X_IN1" />
     <trace from="U_DRV.AIN2" to="net.X_IN2" />
     <trace from="U_DRV.BIN1" to="net.Y_IN1" />
     <trace from="U_DRV.BIN2" to="net.Y_IN2" />
@@ -455,6 +454,7 @@ export default () => (
     <trace from="U_MCU.ADC2" to="net.X_SPEED_WIPER" />
     <trace from="U_MCU.ADC3" to="net.Y_SPEED_WIPER" />
     <trace from="U_MCU.ADC4" to="net.JOY_SW" />
+    <trace from="U_MCU.PD5" to="net.X_IN1" />
     <trace from="U_MCU.PD6" to="net.X_IN2" />
     <trace from="U_MCU.PD7" to="net.Y_IN1" />
     <trace from="U_MCU.PB0" to="net.Y_IN2" />
