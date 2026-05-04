@@ -45,6 +45,7 @@ export const DRV8833PWPR = (props: ChipProps<typeof pinLabels>) => {
     <chip
       pinLabels={pinLabels}
       pinAttributes={pinAttributes}
+
       supplierPartNumbers={{
   "jlcpcb": [
     "C50506"
@@ -52,27 +53,27 @@ export const DRV8833PWPR = (props: ChipProps<typeof pinLabels>) => {
 }}
       manufacturerPartNumber="DRV8833PWPR"
       footprint={<footprint>
-        <smtpad portHints={["pin1"]} pcbX="-2.275078mm" pcbY="-2.850007mm" width="0.500012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin2"]} pcbX="-1.625092mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin3"]} pcbX="-0.975106mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin4"]} pcbX="-0.324866mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin5"]} pcbX="0.32512mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin6"]} pcbX="0.975106mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin7"]} pcbX="1.625092mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin8"]} pcbX="2.275078mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin16"]} pcbX="-2.275078mm" pcbY="2.850007mm" width="0.500012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin15"]} pcbX="-1.625092mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin14"]} pcbX="-0.975106mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin13"]} pcbX="-0.324866mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin12"]} pcbX="0.32512mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin11"]} pcbX="0.975106mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin10"]} pcbX="1.625092mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
-<smtpad portHints={["pin9"]} pcbX="2.275078mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" shape="rect" />
+        <smtpad portHints={["pin1"]} pcbX="-2.275078mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin2"]} pcbX="-1.625092mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin3"]} pcbX="-0.975106mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin4"]} pcbX="-0.324866mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin5"]} pcbX="0.32512mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin6"]} pcbX="0.975106mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin7"]} pcbX="1.625092mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin8"]} pcbX="2.275078mm" pcbY="-2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin16"]} pcbX="-2.275078mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin15"]} pcbX="-1.625092mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin14"]} pcbX="-0.975106mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin13"]} pcbX="-0.324866mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin12"]} pcbX="0.32512mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin11"]} pcbX="0.975106mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin10"]} pcbX="1.625092mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
+<smtpad portHints={["pin9"]} pcbX="2.275078mm" pcbY="2.850007mm" width="0.350012mm" height="1.2999974mm" radius="0.175006mm" shape="pill" />
 <smtpad portHints={["pin17"]} pcbX="0mm" pcbY="0mm" width="2.7399996mm" height="2.7399996mm" shape="rect" />
-<via pcbX="0.500126mm" pcbY="0.499872mm" outerDiameter="0.6096mm" holeDiameter="0.1524mm" fromLayer="top" toLayer="bottom" />
-<via pcbX="-0.499872mm" pcbY="0.499872mm" outerDiameter="0.6096mm" holeDiameter="0.1524mm" fromLayer="top" toLayer="bottom" />
-<via pcbX="-0.499872mm" pcbY="-0.500126mm" outerDiameter="0.6096mm" holeDiameter="0.1524mm" fromLayer="top" toLayer="bottom" />
-<via pcbX="0.500126mm" pcbY="-0.500126mm" outerDiameter="0.6096mm" holeDiameter="0.1524mm" fromLayer="top" toLayer="bottom" />
+<via pcbX="0.500126mm" pcbY="0.499872mm" outerDiameter="0.6096mm" holeDiameter="0.3048mm" fromLayer="top" toLayer="bottom" />
+<via pcbX="-0.499872mm" pcbY="0.499872mm" outerDiameter="0.6096mm" holeDiameter="0.3048mm" fromLayer="top" toLayer="bottom" />
+<via pcbX="-0.499872mm" pcbY="-0.500126mm" outerDiameter="0.6096mm" holeDiameter="0.3048mm" fromLayer="top" toLayer="bottom" />
+<via pcbX="0.500126mm" pcbY="-0.500126mm" outerDiameter="0.6096mm" holeDiameter="0.3048mm" fromLayer="top" toLayer="bottom" />
 <silkscreenpath route={[{"x":2.499994999999899,"y":2.100910200000044},{"x":2.499994999999899,"y":-2.1009101999999302}]} />
 <silkscreenpath route={[{"x":-2.5400000000000773,"y":-2.1397722000000385},{"x":-2.5400000000000773,"y":-0.3810000000000855}]} />
 <silkscreenpath route={[{"x":-2.5400000000000773,"y":2.1397722000000385},{"x":-2.5400000000000773,"y":0.3809999999999718}]} />
