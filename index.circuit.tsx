@@ -9,9 +9,9 @@ import { ATMEGA328P_AU } from "./imports/ATMEGA328P_AU"
 
 export default () => (
   <board
-    width="100mm"
-    height="70mm"
-    layers={4}
+    width="120mm"
+    height="80mm"
+    layers={2}
     defaultTraceWidth="0.15mm"
     nominalTraceWidth="0.2mm"
     minTraceWidth="0.1mm"
@@ -19,7 +19,7 @@ export default () => (
     <WJ500V_5_08_2P
       name="J_PWR"
       pcbX={-44}
-      pcbY={26}
+      pcbY={30}
       pcbRotation={90}
       schX={-24}
       schY={20}
@@ -32,7 +32,7 @@ export default () => (
     <WJ500V_5_08_2P
       name="J_XACT"
       pcbX={-44}
-      pcbY={6}
+      pcbY={10}
       pcbRotation={90}
       schX={-24}
       schY={4}
@@ -45,7 +45,7 @@ export default () => (
     <WJ500V_5_08_2P
       name="J_YACT"
       pcbX={-44}
-      pcbY={-6}
+      pcbY={-10}
       pcbRotation={90}
       schX={-24}
       schY={-4}
@@ -57,15 +57,15 @@ export default () => (
 
     <AMS1117_3_3
       name="U_REG"
-      pcbX={-25}
-      pcbY={24}
+      pcbX={-28}
+      pcbY={28}
       schX={-8}
       schY={20}
     />
 
     <DRV8833PWPR
       name="U_DRV"
-      pcbX={-33}
+      pcbX={-28}
       pcbY={0}
       pcbRotation={-90}
       schX={-8}
@@ -74,8 +74,8 @@ export default () => (
 
     <YA13_FL7_4_B5Ka_45_10__R_Y06
       name="U_JOY"
-      pcbX={2}
-      pcbY={-21}
+      pcbX={30}
+      pcbY={-18}
       schX={10}
       schY={0}
       pinLabels={{
@@ -94,16 +94,16 @@ export default () => (
 
     <ATMEGA328P_AU
       name="U_MCU"
-      pcbX={17}
-      pcbY={-4}
+      pcbX={10}
+      pcbY={6}
       schX={10}
       schY={14}
     />
 
     <A_3296W_1_103
       name="RV_X"
-      pcbX={32}
-      pcbY={0}
+      pcbX={45}
+      pcbY={6}
       schX={20}
       schY={-2}
       pinLabels={{
@@ -115,8 +115,8 @@ export default () => (
 
     <A_3296W_1_103
       name="RV_Y"
-      pcbX={32}
-      pcbY={-16}
+      pcbX={45}
+      pcbY={-10}
       schX={20}
       schY={-10}
       pinLabels={{
@@ -128,8 +128,8 @@ export default () => (
 
     <PZ254V_11_06P
       name="J_ISP"
-      pcbX={21}
-      pcbY={18}
+      pcbX={10}
+      pcbY={28}
       schX={8}
       schY={26}
       pinLabels={{
@@ -148,8 +148,8 @@ export default () => (
       footprint="1206"
       manufacturerPartNumber="CL31A226KOHNNNE"
       supplierPartNumbers={{ jlcpcb: ["C90146"] }}
-      pcbX={-25}
-      pcbY={5}
+      pcbX={-19}
+      pcbY={8}
       schX={-17}
       schY={20}
     />
@@ -160,8 +160,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CC0603KRX7R9BB104"
       supplierPartNumbers={{ jlcpcb: ["C14663"] }}
-      pcbX={-26}
-      pcbY={3}
+      pcbX={-19}
+      pcbY={4}
       schX={-17}
       schY={16}
     />
@@ -172,8 +172,8 @@ export default () => (
       footprint="1206"
       manufacturerPartNumber="CL31A106KAHNNNE"
       supplierPartNumbers={{ jlcpcb: ["C9807"] }}
-      pcbX={-13}
-      pcbY={27}
+      pcbX={-18}
+      pcbY={31}
       schX={-12}
       schY={20}
     />
@@ -184,8 +184,8 @@ export default () => (
       footprint="1206"
       manufacturerPartNumber="CL31A106KAHNNNE"
       supplierPartNumbers={{ jlcpcb: ["C9807"] }}
-      pcbX={-13}
-      pcbY={21}
+      pcbX={-18}
+      pcbY={25}
       schX={-4}
       schY={20}
     />
@@ -197,7 +197,7 @@ export default () => (
       manufacturerPartNumber="CC0603KRX7R9BB104"
       supplierPartNumbers={{ jlcpcb: ["C14663"] }}
       pcbX={-6}
-      pcbY={21}
+      pcbY={27}
       schX={-4}
       schY={16}
     />
@@ -208,8 +208,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CL10A226MQ8NRNC"
       supplierPartNumbers={{ jlcpcb: ["C59461"] }}
-      pcbX={-27.8}
-      pcbY={1.2}
+      pcbX={-19}
+      pcbY={-2}
       pcbRotation={0}
       schX={-4}
       schY={4}
@@ -221,8 +221,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603B103K500NT"
       supplierPartNumbers={{ jlcpcb: ["C57112"] }}
-      pcbX={-27.6}
-      pcbY={-1.6}
+      pcbX={-19}
+      pcbY={-8}
       schX={-4}
       schY={0}
     />
@@ -233,8 +233,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CC0603KRX7R9BB104"
       supplierPartNumbers={{ jlcpcb: ["C14663"] }}
-      pcbX={25}
-      pcbY={-3}
+      pcbX={20}
+      pcbY={8}
       schX={14}
       schY={16}
     />
@@ -245,8 +245,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="CC0603KRX7R9BB104"
       supplierPartNumbers={{ jlcpcb: ["C14663"] }}
-      pcbX={25}
-      pcbY={-7}
+      pcbX={20}
+      pcbY={2}
       schX={14}
       schY={14}
     />
@@ -257,7 +257,7 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603WAF1002T5E"
       supplierPartNumbers={{ jlcpcb: ["C25804"] }}
-      pcbX={12}
+      pcbX={22}
       pcbY={-28}
       schX={14}
       schY={8}
@@ -269,8 +269,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603WAF1002T5E"
       supplierPartNumbers={{ jlcpcb: ["C25804"] }}
-      pcbX={24}
-      pcbY={7}
+      pcbX={18}
+      pcbY={14}
       schX={14}
       schY={18}
     />
@@ -281,8 +281,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603WAF1002T5E"
       supplierPartNumbers={{ jlcpcb: ["C25804"] }}
-      pcbX={-29}
-      pcbY={-6}
+      pcbX={-14}
+      pcbY={-14}
       schX={14}
       schY={10}
     />
@@ -293,8 +293,8 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603WAF1002T5E"
       supplierPartNumbers={{ jlcpcb: ["C25804"] }}
-      pcbX={-22}
-      pcbY={10}
+      pcbX={-14}
+      pcbY={14}
       schX={14}
       schY={6}
     />
