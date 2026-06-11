@@ -12,9 +12,8 @@ export default () => (
     width="120mm"
     height="80mm"
     layers={2}
-    defaultTraceWidth="0.15mm"
-    nominalTraceWidth="0.2mm"
-    minTraceWidth="0.1mm"
+    minViaHoleDiameter="0.3mm"
+    minViaPadDiameter="0.45mm"
   >
     <WJ500V_5_08_2P
       name="J_PWR"
@@ -66,7 +65,7 @@ export default () => (
     <DRV8833PWPR
       name="U_DRV"
       pcbX={-28}
-      pcbY={0}
+      pcbY={-10}
       pcbRotation={-90}
       schX={-8}
       schY={0}
@@ -148,7 +147,7 @@ export default () => (
       footprint="1206"
       manufacturerPartNumber="CL31A226KOHNNNE"
       supplierPartNumbers={{ jlcpcb: ["C90146"] }}
-      pcbX={-19}
+      pcbX={-21}
       pcbY={8}
       schX={-17}
       schY={20}
@@ -221,10 +220,11 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603B103K500NT"
       supplierPartNumbers={{ jlcpcb: ["C57112"] }}
-      pcbX={-19}
-      pcbY={-8}
+      pcbX={-10}
+      pcbY={-6}
       schX={-4}
       schY={0}
+      pcbRotation={90}
     />
 
     <capacitor
@@ -269,7 +269,7 @@ export default () => (
       footprint="0603"
       manufacturerPartNumber="0603WAF1002T5E"
       supplierPartNumbers={{ jlcpcb: ["C25804"] }}
-      pcbX={18}
+      pcbX={24}
       pcbY={14}
       schX={14}
       schY={18}
